@@ -45,7 +45,7 @@ def sample_usage():
 
     # All the regular dbapihook methods works
     my_records = mssql.get_records("SELECT col1, col2 FROM THE_TABLE")
-    mssql.run("DELETE FROM othet_staging_table_name")
+    mssql.run("DELETE FROM other_staging_table_name")
 
     # Saving data to a staging table using pandas to_sql
     conn = mssql.get_sqlalchemy_engine()
@@ -91,7 +91,7 @@ def sample_usage():
 
     # All the default dbapihook methods works
     my_records = mssql.get_records("SELECT col1, col2 FROM THE_TABLE")
-    mssql.run("DELETE FROM othet_staging_table_name")
+    mssql.run("DELETE FROM other_staging_table_name")
 
     # Saving data to a staging table using pandas to_sql
     conn = mssql.get_sqlalchemy_engine()
